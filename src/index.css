@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --win-gray: #c0c0c0;
+    --win-light: #ffffff;
+    --win-dark: #808080;
+    --win-black: #000000;
+    --win-navy: #000080;
+    --win-teal: #008080;
+    --win-highlight: #000080;
+    --win-highlight-text: #ffffff;
+  }
+
+  body {
+    background-color: #c0c0c0;
+    font-family: 'MS Sans Serif', Tahoma, Geneva, 'Segoe UI', Arial, sans-serif;
+    image-rendering: pixelated;
+    user-select: none;
+    -webkit-font-smoothing: none;
+    cursor: default;
+    touch-action: manipulation;
+  }
+
+  /* Retro Windows 3.11 Scrollbars */
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    background-color: #dfdfdf;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #dfdfdf;
+    border: 1px solid #808080;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  ::-webkit-scrollbar-button {
+    background-color: #c0c0c0;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    display: block;
+  }
+}
+
+/* Windows 3.11 Bevels & Frames */
+.win3-window {
+  background-color: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.6);
+}
+
+.win3-window-outer {
+  background-color: #c0c0c0;
+  border: 1px solid #000000;
+  box-shadow: inset 1px 1px #ffffff, inset -1px -1px #808080;
+}
+
+.win3-thick-border {
+  border: 4px solid #c0c0c0;
+  outline: 1px solid #000000;
+}
+
+.win3-outset {
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.win3-inset {
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.win3-deep-inset {
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.win3-button {
+  background-color: #c0c0c0;
+  color: #000000;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 3px 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.win3-button:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
+
+.win3-button:active, .win3-button-pressed {
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 4px 11px 2px 13px;
+}
+
+.win3-button:disabled {
+  color: #808080;
+  text-shadow: 1px 1px 0px #ffffff;
+  cursor: not-allowed;
+}
+
+.win3-input {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  outline: 1px solid #000000;
+  padding: 3px 6px;
+  font-size: 13px;
+}
+
+.win3-input:focus {
+  outline: 1px solid #000080;
+}
+
+.win3-titlebar-active {
+  background-color: #000080;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.win3-titlebar-inactive {
+  background-color: #808080;
+  color: #c0c0c0;
+  font-weight: bold;
+}
+
+.font-fixedsys {
+  font-family: 'Courier Prime', 'VT323', 'Courier New', monospace;
+  letter-spacing: 0.5px;
+}
+
+.font-system {
+  font-family: 'MS Sans Serif', Tahoma, 'Segoe UI', sans-serif;
+}
+

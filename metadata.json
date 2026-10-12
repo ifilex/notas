@@ -1,0 +1,6 @@
+{
+  "name": "Bloc de notas",
+  "description": "Bloc de notas simple y funcional con menús completos, editor de texto, soporte para archivos locales y almacenamiento en la nube.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
